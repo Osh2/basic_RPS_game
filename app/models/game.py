@@ -4,11 +4,17 @@ class Game:
         self.player2 = player2
     
     def check_winner(self, game):
-        if self.player1.selection == 'rock' and self.player2.selection == 'paper':
-            return f'{self.player1.name} wins!'
-        elif self.player1.selection == 'rock' and self.player2.selection == 'scissors':
-            return f'{self.player2.name} wins!'
+        if self.player1.selection == 'rock' and self.player2.selection == 'scissors':
+            return self.player1.name
+        elif self.player1.selection == 'rock' and self.player2.selection == 'paper':
+            return self.player2.name
+        elif self.player1.selection == 'scissors' and self.player2.selection == 'rock':
+            return self.player2.name
+        elif self.player1.selection == 'scissors' and self.player2.selection =='paper':
+            return self.player1.name
+        elif self.player1.selection == 'paper' and self.player2.selection == 'scissors':
+            return self.player2.name
+        elif self.player1.selection == 'paper' and self.player2.selection == 'rock':
+            return self.player2.name
         elif self.player1.selection == self.player2.selection:
-            return "DRAW"
-        else: 
-            return None   
+            return None  
