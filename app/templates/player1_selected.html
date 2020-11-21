@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div>
+    <h1> {{game.player1.name}} is ready for battle </h1>
+    <h3> PLAYER 2 MAKE YOUR SELECTION!</h3>
+        <form action=""> STATE YOUR NAME 
+        <input type="text">
+        <label for="selector"> SELECTOR OF DOOM </label>
+        <select name="selector" id="selector">
+            <option value="rock"> Rock </option>
+            <option value="paper"> Paper </option>
+            <option value="scissors"> Scissors</option>
+        </select>
+        <input type="submit" value="Meet your fate">
+        </form>
+</div>
+
+
+{% endblock %}
