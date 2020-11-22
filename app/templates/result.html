@@ -1,13 +1,13 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div>
+<div id='result'>
     {% if winner == None %}
     <h1> ITS A DRAW </h1>
     {% else %}
     <h1> {{winner.name}} destroys the opposition with {{winner.selection}}</h1>
     {% endif %}
-    <a href="/"> Brave enough to play again? </a>
+    <a href="/" id="home"> Brave enough to play again? </a>
 </div>
 
 {% endblock %}

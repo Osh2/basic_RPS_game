@@ -1,8 +1,8 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <div>
-        <h1> MAKE YOUR SELECTION!</h1>
+    <div id = 'player1'>
+        <h1> MAKE YOUR SELECTION! </h1>
         <form action="/add_player" method="post"> STATE YOUR NAME 
         <input type="text" name='name' id='name'>
         <label for="selector"> SELECTOR OF DOOM </label>
@@ -11,7 +11,7 @@
             <option value="paper"> Paper </option>
             <option value="scissors"> Scissors</option>
         </select>
-        <input type="submit" value="Meet your fate">
+        <input type="submit" value="Meet your fate" class="fate">
         </form>
     </div>
 

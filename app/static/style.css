@@ -1,0 +1,42 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: crimson;
+    text-align: center;
+}
+
+body > header{
+    padding: 50px;
+    font-size: 200%;
+}
+
+
+#player1{
+    padding-left: 10px;
+    
+}
+
+.fate{
+    color: black;
+    background-color: crimson;
+}
+
+#name{
+    background-color: black;
+    color: crimson;
+}
+
+#selector{
+    background-color: black;
+    color: crimson;
+}
+
+#home{
+    text-decoration: none;
+    border: dotted crimson 1px;
+    padding: 5px;
+    font-size: 100%;
+    color: crimson;
+}
