@@ -15,6 +15,6 @@ class Game:
         elif self.player1.selection == 'paper' and self.player2.selection == 'scissors':
             return self.player2
         elif self.player1.selection == 'paper' and self.player2.selection == 'rock':
-            return self.player2
+            return self.player1
         elif self.player1.selection == self.player2.selection:
-            return None  
+            return None
