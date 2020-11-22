@@ -3,8 +3,8 @@
 {% block content %}
     <div>
         <h1> MAKE YOUR SELECTION!</h1>
-        <form action=""> STATE YOUR NAME 
-        <input type="text">
+        <form action="/add_player" method="post"> STATE YOUR NAME 
+        <input type="text" name='name' id='name'>
         <label for="selector"> SELECTOR OF DOOM </label>
         <select name="selector" id="selector">
             <option value="rock"> Rock </option>
@@ -15,5 +15,4 @@
         </form>
     </div>
 
-<!-- i need to make it so when the first person submits their name and selection it logs it and directs to another page for player 2 to enter their info. After player 2 submits their info i need to access the game class and run the check_winner method then direct to a final page which displays the result and includes a link to the home page -->
 {% endblock %}

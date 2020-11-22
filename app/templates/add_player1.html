@@ -4,8 +4,8 @@
 <div>
     <h1> {{game.player1.name}} is ready for battle </h1>
     <h3> PLAYER 2 MAKE YOUR SELECTION!</h3>
-        <form action=""> STATE YOUR NAME 
-        <input type="text">
+        <form action="/add_player2_get_results" method='post'> STATE YOUR NAME 
+        <input type="text" id='name' name='name'>
         <label for="selector"> SELECTOR OF DOOM </label>
         <select name="selector" id="selector">
             <option value="rock"> Rock </option>
@@ -15,6 +15,6 @@
         <input type="submit" value="Meet your fate">
         </form>
 </div>
-
+ 
 
 {% endblock %}
