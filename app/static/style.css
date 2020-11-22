@@ -40,3 +40,20 @@ body > header{
     font-size: 100%;
     color: crimson;
 }
+
+#footer{
+    color: white;
+    text-align: start;
+    margin-left: 10px;
+    position: absolute;
+    bottom: 0;
+}
+
+#disclaimer{
+    text-align: right;
+    color: white;
+    margin-right: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
