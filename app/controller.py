@@ -32,18 +32,3 @@ def add_player2():
     winner = game.check_winner(game)
     return render_template('result.html', game = game, winner = winner)
 
-# @app.route('/result')
-# def result():
-#     return render_template('result.html', game = game)
-
-
-    #  # take data from form
-    # task_title = request.form["title"]
-    # task_description = request.form["description"]
-   
-    # # make a new instance of a task using the data as constructor values
-    # task = Task(task_title, task_description, False)
-   
-    # # add that new task object to the tasks list
-    # add_new_task(task)
-    # return redirect('/')
